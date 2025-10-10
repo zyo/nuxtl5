@@ -1,0 +1,10 @@
+import { routeLocationKey } from "vue-router";
+
+export default defineEventHandler((event) => {
+//   return $fetch(`https://api.coinlore.net${event.node.req.url}`)
+//console.log('Middleware intercepted URL:', event);
+
+//   return $fetch(`https://api.coinlore.net/api/ticker/id=${route.params.id}`)
+ return $fetch(`https://api.coinlore.net/api${event.node.req.url}`)
+                //https://api.coinlore.net/api/ticker/?id=80 (ETH)
+})
