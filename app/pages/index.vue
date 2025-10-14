@@ -4,8 +4,8 @@ const { data } = await useFetch('https://api.coinlore.net/api/tickers/?limit=10'
 
 <template>
   <main>
-    <h1>Курс криптовалют </h1>
-
+    <h1>Курс криптовалют</h1>
+    <a href="https://www.coinlore.com/">coinlore.com</a>
     <table border="1 px solid">
       <thead>
       <tr>
