@@ -1,12 +1,16 @@
 <script setup>
+
 const { data } = await useFetch('https://api.coinlore.net/api/tickers/?limit=10')
+
+console.log('INDEX.VUE')
+
 </script>
 
 <template>
   <main>
     <h1>Курс криптовалют</h1>
-    <a href="https://www.coinlore.com/">coinlore.com</a>
-    <table border="1 px solid">
+    <a href="https://www.coinlore.com/" target="_blank">coinlore.com</a>
+    <table>
       <thead>
       <tr>
         <th>Name</th>
@@ -15,6 +19,7 @@ const { data } = await useFetch('https://api.coinlore.net/api/tickers/?limit=10'
         <th>Details</th>
       </tr>
       </thead>
+      <tbody>
       <tr v-for="currency in data.data" :key="data.data.id">
         <td>{{ currency.name }}</td>
         <td>{{ currency.symbol }}</td>
@@ -23,6 +28,8 @@ const { data } = await useFetch('https://api.coinlore.net/api/tickers/?limit=10'
           <NuxtLink :to="'/ticker/' + currency.id">{{ currency.id }}</NuxtLink>
         </td>
       </tr>
+      </tbody>
     </table>
+
   </main>
 </template>
