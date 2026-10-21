@@ -1,7 +1,7 @@
 <script setup>
 
 const { data } = await useFetch('https://api.coinlore.net/api/tickers/?limit=10')
-
+//console.log(data.value)
 console.log('INDEX.VUE')
 
 </script>

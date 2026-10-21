@@ -1,4 +1,5 @@
 <script setup>
+console.log('[id].vue')
 const route = useRoute()
 const { data } = await useFetch('https://api.coinlore.net/api/ticker/?id=' + route.params.id)
 const coin = data.value[0]
