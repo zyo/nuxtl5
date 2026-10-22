@@ -1,14 +1,16 @@
 <script setup>
 
+const APPDATE="20261022"
 const { data } = await useFetch('https://api.coinlore.net/api/tickers/?limit=10')
 
 console.log('INDEX.VUE')
+
 
 </script>
 
 <template>
   <main>
-    <h1>Курс криптовалют</h1>
+    <h1 :title="APPDATE">Курс криптовалют</h1>
     <a href="https://www.coinlore.com/" target="_blank">coinlore.com</a>
     <table>
       <thead>
