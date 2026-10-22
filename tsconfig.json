@@ -14,5 +14,10 @@
     {
       "path": "./.nuxt/tsconfig.node.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "allowJs": true
+  }  
 }
