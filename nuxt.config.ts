@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2026-10-20',
   devtools: { enabled: true },
   routeRules: {
     // Generated at build time for SEO purpose
